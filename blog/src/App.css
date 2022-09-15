@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(55, 53, 56);
+}
+
+h1{
+  color: rgb(107, 106, 106);
+}
+
+label{
+  color: rgb(107, 106, 106);
+}
+
+.card{
+  background-color: rgb(131, 131, 131);
+}
+
+.form-control{
+  border-color: rgb(94, 84, 94);
+  background-color: #53465a;
+}
+
+.btn-primary{
+  background-color: violet;
+  border-color: rgb(79, 75, 84);
+}
