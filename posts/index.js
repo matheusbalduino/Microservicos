@@ -44,6 +44,7 @@ app.post('/events', (req, res) => {
 })
 
 app.listen(4000, () => {
+  console.log("funciona o deploy")
   console.log('listening on 4000')
 })
 
