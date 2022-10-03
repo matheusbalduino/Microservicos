@@ -8,4 +8,5 @@ COPY ./ ./
 CMD ["npm", "start"]
 
 #to build the application execute: docker build . or docker build -t <name> .
+# to exhibit the container run the command below
 #docker run <name>

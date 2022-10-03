@@ -1,3 +1,4 @@
+# this firt one is the config pod, basically where the nodess are created.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,8 +15,22 @@ spec:
     spec:
       containers:  
         - name: posts
-          image: microservices/posts
-          imagePullPolicy: IfNotPresent
+          image: matheusbalduino/posts:0.0.1
+#          imagePullPolicy: IfNotPresent
+# The config below references to a service or cluster
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: posts-clusterip-srv
+spec:
+  selector:
+    app: posts
+  ports:
+    - name: posts
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
 
 # must contain imagePullPolicy
 # to deployment 

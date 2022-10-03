@@ -1,3 +1,4 @@
+# this is the pod creation, in other words the image which runs inside a node
 apiVersion: v1
 kind: Pod
 metadata:
@@ -5,9 +6,9 @@ metadata:
 spec:
   containers:
     - name: posts
-      image: microservices/posts
-      imagePullPolicy: IfNotPresent
-  #     image: matheusbalduino/posts:0.0.1  
+      image: matheusbalduino/posts:0.0.1  
+      # image: microservices/posts
+      # imagePullPolicy: IfNotPresent
   # imagePullSecrets:
   #   - name: docker-hub
 
